@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBar -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#FF9800"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/greetingText"
+            android:text="Good Day"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/settings"
+             />
+    </LinearLayout>
+
+    <!-- Wash Options -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <!-- Basic Wash -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="#F1F8FF"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/basicIcon"
+                android:src="@drawable/basic"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:text="Basic Wash"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R 500.00"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Premium Wash -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="#F1F8FF"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/premiumIcon"
+                android:src="@drawable/premium"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:text="Premium Wash"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R 1000.00"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Full Detail -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="#F1F8FF"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fullIcon"
+                android:src="@drawable/full"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:text="Full Detail"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R 2000.00"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bookings Header -->
+    <TextView
+        android:text="My Bookings"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Booking Item -->
+    <LinearLayout
+        android:background="#F6F6F6"
+        android:layout_margin="12dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Nov 25 - 11:00 AM"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Premium Wash"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:src="@drawable/home"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                 />
+
+            <TextView
+                android:text="Home"
+                android:textColor="#0F0E0E"
+                android:textSize="12sp"
+                android:layout_height="22dp"
+                android:layout_width="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bookingsIcon"
+                android:src="@drawable/bookings"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                 />
+
+            <TextView
+                android:text="Bookings"
+                android:textColor="#090909"
+                android:textSize="12sp"
+                android:layout_height="22dp"
+                android:layout_width="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:src="@drawable/profile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                 />
+
+            <TextView
+                android:text="Profile"
+                android:textColor="#0B0B0B"
+                android:textSize="12sp"
+                android:layout_height="22dp"
+                android:layout_width="50dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
